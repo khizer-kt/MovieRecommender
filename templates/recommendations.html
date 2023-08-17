@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Movie Recommendations</h1>
+        <ul class="list-group">
+            {% for recommendation in recommendations %}
+            <li class="list-group-item">{{ recommendation }}</li>
+            {% endfor %}
+        </ul>
+        <p class="mt-3"><a href="/" class="btn btn-primary">Back to Home</a></p>
+    </div>
+</body>
+</html>
